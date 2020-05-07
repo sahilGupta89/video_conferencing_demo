@@ -1,0 +1,12 @@
+<div style="text-align:center">
+    <div>
+        <video *ngIf="showRemoteVideo" #remoteVideo width="80%" height="80%" autoplay></video>
+        <video *ngIf="showLocalVideo" #localVideo width="20%" height="20%" autoplay></video>
+    </div>
+    <div class="btn btn-primary" style="text-align:center;display:block;">
+        <!-- <button (click)="start()">Start</button> -->
+        <button style="width:20%;background-color: aqua;" (click)="start()">Call</button>
+        <button (click)="hangup()">Disconnect</button>
+        <!-- <button (click)=>Hang Up</button> -->
+    </div>
+</div>
